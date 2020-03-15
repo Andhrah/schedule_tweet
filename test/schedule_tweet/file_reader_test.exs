@@ -15,9 +15,11 @@ defmodule FileReaderTest do
   end
 
   test "An empty string should return an empty string" do
-    str = pick_string("")
+    with_mock File, [read!: fn(_) -> "" end] do
+      str = pick_string("")
 
-    assert str == ""
+      assert str == ""
+    end
   end
 
   test "The string should be trimmed" do
