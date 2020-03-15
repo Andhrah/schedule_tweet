@@ -1,0 +1,4 @@
+I have almost completed my elixir application, @jayydubby, this tweet is a random tweet coming from my elixir application.
+Elixir is cool, this is a random tweet coming from my elixir app, thank you @taylonr for the great tutorial.
+A function is a set of statements organized together to perform a specific task. Functions in programming work mostly like function in Math. You give functions some input, they generate output based on the input provided.
+Today is just good.
