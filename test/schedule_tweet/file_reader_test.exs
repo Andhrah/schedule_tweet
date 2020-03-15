@@ -2,6 +2,8 @@ defmodule FileReaderTest do
   use ExUnit.Case
   import ScheduleTweet.FileReader
   import Mock
+
+  doctest ScheduleTweet.FileReader
   test "passing a file should return a string" do
     str = get_strings_to_tweet(Path.join("#{:code.priv_dir(:schedule_tweet)}", "sample.txt"))
 
