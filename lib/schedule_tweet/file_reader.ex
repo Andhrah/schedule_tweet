@@ -5,7 +5,12 @@ defmodule ScheduleTweet.FileReader do
     # pipe( |> ) is a command which causes the output from one routine
     # to be the input for another.
     # we'll pipe the the content from file read into the
-    # function String.split and we'll pass it the new line character
+    # function pick_string
+    |> pick_string
+  end
+
+  def pick_string(str) do
+    str
     |> String.split("\n")
     # trim to remove whitespaces
     |> Enum.map(&String.trim/1)
@@ -16,6 +21,5 @@ defmodule ScheduleTweet.FileReader do
 
     # Pick random tweet from sample txt file to send out
     |> Enum.random()
-
   end
 end
