@@ -1,4 +1,0 @@
-Line 1
-Line 2
-A function is a set of statements organized together to perform a specific task. Functions in programming work mostly like function in Math. You give functions some input, they generate output based on the input provided.
-And a third line.
