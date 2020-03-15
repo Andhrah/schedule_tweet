@@ -1,4 +1,4 @@
 defmodule ScheduleTweet.Scheduler do
-  use QuantumScheduler
-  opt_app: :schedule_tweet
+  use Quantum.Scheduler,
+  otp_app: :schedule_tweet
 end
