@@ -26,7 +26,9 @@ defmodule ScheduleTweet.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:quantum, "~> 2.4"},
       {:credo, "~> 1.2"},
-      {:extwitter, "~> 0.12.0"}
+      {:extwitter, "~> 0.12.0"},
+      {:mock, "~> 0.3.4"},
+      {:mix_test_watch, "~> 1.0"}
     ]
   end
 end
