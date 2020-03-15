@@ -13,5 +13,9 @@ defmodule ScheduleTweet.FileReader do
     |> Enum.filter(&String.length(&1) <= 140)
     # the above can be written like so:
     # |> Enum.filter(fn str -> String.length(str) <= 140)
+
+    # Pick random tweet from sample txt file to send out
+    |> Enum.random()
+
   end
 end
